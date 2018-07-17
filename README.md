@@ -1,4 +1,4 @@
-#Important notes for Raspberry Pi
+# Important notes for Raspberry Pi
 
 1) Run node-red as root due to pcap/kernel limitations to get promiscuous mode. To achieve this change the systemd service configuration file for nodered.
 
