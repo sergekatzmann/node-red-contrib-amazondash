@@ -4,16 +4,12 @@
 
 2) Ensure the libcap is installed
 
-
     sudo apt-get install libpcap-dev
 
 
 3) Install node-pcap manually from. At least it helped be to build it without errors.
 
-
     sudo npm install https://github.com/mranney/node_pcap.git
-
-
 
 # Amazon Dash Button Node for NodeRED
 
