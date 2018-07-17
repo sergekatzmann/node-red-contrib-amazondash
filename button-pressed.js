@@ -11,11 +11,12 @@ module.exports = function(RED) {
         
         console.log(mac);
 
-        var dash = dash_button(mac); 
+        var dash = dash_button(mac, null, null, 'all'); 
         var found = function () {
             console.log('Button Pressed: ' + mac);
-            var msg = {};
-            node.send(msg);
+            node.send({
+                payload: mac
+            });
         };
         
         dash.on("detected", _.debounce(found, 5000, true));
