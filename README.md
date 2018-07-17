@@ -1,3 +1,9 @@
+#Important notes for Raspberry Pi
+
+1) Run node-red as root due to pcap/kernel limitations to get promiscuous mode. To achieve this change the systemd service configuration file for nodered.
+
+2) Ensure the libcap is installed
+
 # Amazon Dash Button Node for NodeRED
 
 A simple node that listens for when an Amazon Dash button is pressed.
