@@ -7,7 +7,7 @@
     sudo apt-get install libpcap-dev
 
 
-3) Install node-pcap manually from. At least it helped be to build it without errors.
+3) Install node-pcap manually from. At least it helped me to build it without errors.
 
     sudo npm install https://github.com/mranney/node_pcap.git
 
