@@ -20,6 +20,12 @@ module.exports = function(RED) {
         };
         
         dash.on("detected", _.debounce(found, 5000, true));
+        
+        node.on("close", function () {
+           if (typeof(dash) !== "undefined" && dash) {
+               dash.emit('close');
+           }
+        });        
     };
  
     RED.nodes.registerType("ButtonPressed",node);
